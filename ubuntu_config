@@ -1,0 +1,26 @@
+gnome3 + ubuntu11.10 config setting
+1.更改源:
+  sudo gedit /etc/apt/source.list
+  #将下面的地址全部复制到文件中
+  deb http://mirrors.163.com/ubuntu/ oneiric main universe restricted multiverse
+  deb-src http://mirrors.163.com/ubuntu/ oneiric main universe restricted multiverse
+  deb http://mirrors.163.com/ubuntu/ oneiric-security universe main multiverse restricted
+  deb-src http://mirrors.163.com/ubuntu/ oneiric-security universe main multiverse restricted
+  deb http://mirrors.163.com/ubuntu/ oneiric-updates universe main multiverse restricted
+  deb http://mirrors.163.com/ubuntu/ oneiric-proposed universe main multiverse restricted
+  deb-src http://mirrors.163.com/ubuntu/ oneiric-proposed universe main multiverse restricted
+  deb http://mirrors.163.com/ubuntu/ oneiric-backports universe main multiverse restricted
+  deb-src http://mirrors.163.com/ubuntu/ oneiric-backports universe main multiverse restricted
+  deb-src http://mirrors.163.com/ubuntu/ oneiric-updates universe main multiverse restricted
+  sudo apt-get update
+2.安装gvim,软件中心直接安装就可以了 
+3.配置gvim文件，文件在附件中, /usr/share/vim/vimrc |  替换原先的color文件夹
+4.软件中心安装ctag用于配置tlist
+5. 复制新的bashrc文件到目录中
+6. 安装gnome-tweak-tool 用于修改gnome3主题以及字体标签等
+7. ubuntu 比较好看的标签
+  sudo add-apt-repository ppa:tiheum/equinox
+  sudo apt-get update && sudo apt-get install faenza-icon-theme
+8. 安装firefox两个插件： vimperator  | firebug
+9. 安装ror环境，主要可以查看附件的ruby.sh文件
+10. 安装ssh
